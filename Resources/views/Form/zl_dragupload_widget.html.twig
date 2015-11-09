@@ -1,0 +1,16 @@
+{% block zl_dragupload_widget %}
+  {% set pref = 'zl-dragupload' %}
+  {% spaceless %}
+    <div class="{{ pref }}-zone">
+      <div class="row">
+        {{ form_widget(form) }}
+      </div>
+    </div>
+  {% endspaceless %}
+  <script>
+    // We must load the script only once, even if many widgets on form
+    if ( !window.zlkladr ) {
+      document.write('<script src="{{ asset('bundles/zldragupload/js/dropzone.js') }}"></sc'+'ript>');
+    }
+  </script>
+{% endblock %}
