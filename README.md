@@ -9,12 +9,12 @@ To use this bundle you need to add some configuration to composer.json, as follo
             {
                 "type": "vcs",
                 "url": "https://github.com/zer0latency/ZlDragUploadBundle"
-            }
+            },
             ...
         ],
         "require": {
             ...
-            "zer0latency/zl-dragupload-bundle": "dev-master"
+            "zer0latency/zl-dragupload-bundle": "dev-master",
             ...
         }
     }
